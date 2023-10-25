@@ -11,7 +11,7 @@
             <jsp:include page="common.jsp" />
         </head>
 
-        <body>
+        <body>123412341234
             <jsp:include page="header.jsp" />
             <div class="container">
                 <h1 class="mt-5">User Registration</h1>
