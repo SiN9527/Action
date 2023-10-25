@@ -14,7 +14,7 @@
         <body>
             <jsp:include page="header.jsp" />
             <div class="container">
-                <h1 class="mt-5">User Registration</h1>
+                <h1 class="mt-5">User Registration123</h1>
                 <form action="/MidProject/Login" method="post" class="mt-4">
 
                     <div class="mb-3">1234
