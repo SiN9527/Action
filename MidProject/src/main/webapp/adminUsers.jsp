@@ -7,7 +7,7 @@
     <title>User Information</title>
     <!-- 引入 Bootstrap 样式表和 JavaScript 文件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-     <jsp:include page="common.jsp" />
+     <jsp:include page="common.jsp" />ss
 </head>
 <body>
 <jsp:include page="header.jsp" />
