@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 import tw.com.eeit.petforum.model.bean.Member;
@@ -48,6 +49,11 @@ public class PetDAO {
 			p.setpName(rs.getString("pName"));
 			p.setType(rs.getString("type"));
 			p.setpPhoto(rs.getBytes("pPhoto"));
+			
+			byte[] b=rs.getBytes("pPhoto");
+			String base64String="data:image/png;base64,"+Base64.getEncoder().encodeToString(b);
+			
+			p.setpPhotoBase64(base64String);
 			return p;
 		}
 
@@ -125,6 +131,11 @@ public class PetDAO {
 			p.setpName(rs.getString("pName"));
 			p.setType(rs.getString("type"));
 			p.setpPhoto(rs.getBytes("pPhoto"));
+			
+			byte[] b=rs.getBytes("pPhoto");
+			String base64String="data:image/png;base64,"+Base64.getEncoder().encodeToString(b);
+			
+			p.setpPhotoBase64(base64String);
 
 			Member m = new Member();
 			m.setmID(rs.getInt("mID"));
@@ -136,6 +147,7 @@ public class PetDAO {
 			m.setmAge(rs.getInt("mAge"));
 			m.setAddress(rs.getString("address"));
 			m.setmPhoto(rs.getString("mPhoto"));
+			
 
 			p.setMember(m);
 
