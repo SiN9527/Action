@@ -7,7 +7,7 @@
             <meta charset="UTF-8">
             <title>Survey system</title>
             <jsp:include page="common.jsp" />
-        </head>
+        </head>ffs
 
         <body>
             <jsp:include page="header.jsp" />
